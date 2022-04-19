@@ -8,8 +8,8 @@ export default function SideNavbar() {
       </div>
 
       <div className="side-navbar-links-wrapper">
-        <Link>Main Dashboard</Link>
-        <Link>About</Link>
+        <Link to="/home">Main Dashboard</Link>
+        <Link to="/about">About</Link>
       </div>
     </div>
   );

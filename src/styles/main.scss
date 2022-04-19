@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+@import "./mixins.scss";
 @import "./topNavbar.scss";
 @import "./sideNavbar.scss";
 @import "./pages/dashboard.scss";
 @import "./pages/about.scss";
+@import "./pages/fizzBuzz.scss";
+@import "./pages/magic8Ball.scss";
+@import "./pages/calculator.scss";
 
 body {
   margin: 0;
@@ -15,6 +19,10 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
+h1 {
+  margin: 0;
+}
+
 h3 {
   margin: 0;
 }
@@ -22,4 +30,5 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Lobster", cursive;
 }

@@ -1,0 +1,28 @@
+.magic-container {
+  @include centerContent();
+
+  .magic-header {
+    margin: 1em;
+    font-size: 1.5em;
+  }
+
+  .answer-wrapper.active {
+    font-size: 2em;
+    margin: 1em;
+    display: block;
+  }
+
+  .answer-wrapper.hidden {
+    visibility: hidden;
+    margin: 3em;
+  }
+
+  button {
+    width: 150px;
+    height: 90px;
+    background-color: rgb(53, 182, 224);
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5em;
+  }
+}

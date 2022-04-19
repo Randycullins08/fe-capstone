@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function SideNavbar() {
   return (
@@ -8,8 +8,21 @@ export default function SideNavbar() {
       </div>
 
       <div className="side-navbar-links-wrapper">
-        <Link to="/home">Main Dashboard</Link>
-        <Link to="/about">About</Link>
+        <NavLink activeClassName="active" to="/home">
+          Main Dashboard
+        </NavLink>
+        <NavLink activeClassName="active" to="/fizz-buzz">
+          FizzBuzz
+        </NavLink>
+        <NavLink activeClassName="active" to="/magic-8-ball">
+          Magic 8 Ball
+        </NavLink>
+        <NavLink activeClassName="active" to="/calculator">
+          Calculator
+        </NavLink>
+        <NavLink activeClassName="active" to="/about">
+          About
+        </NavLink>
       </div>
     </div>
   );

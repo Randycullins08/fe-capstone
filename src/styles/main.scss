@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@import "./topNavbar.scss";
+@import "./sideNavbar.scss";
+
 body {
-  color: red;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

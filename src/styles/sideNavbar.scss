@@ -1,0 +1,20 @@
+.side-navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(34, 34, 113);
+  color: white;
+  height: 100vh;
+
+  .app-title-wrapper {
+    margin-top: 2em;
+  }
+
+  .side-navbar-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+  }
+}

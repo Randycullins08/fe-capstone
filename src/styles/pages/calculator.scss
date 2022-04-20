@@ -1,8 +1,5 @@
 .calculator-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centerContent();
 
   .calculator-header {
     margin-bottom: 2em;
@@ -44,7 +41,7 @@
     }
 
     .operator {
-      background-color: #00a2c4;
+      background-color: rgb(53, 182, 224);
       color: #fff;
       font-weight: bold;
     }

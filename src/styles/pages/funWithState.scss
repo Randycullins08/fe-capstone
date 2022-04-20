@@ -1,0 +1,44 @@
+.fun-with-state-container {
+  @include centerContent();
+
+  .counter-wrapper {
+    width: 100%;
+    font-size: 1.5em;
+
+    .counter-header {
+      margin: 1em;
+    }
+
+    .counter-btns-wrapper {
+      margin: 1em 0 0;
+    }
+  }
+
+  .greeting-wrapper {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+
+  .hide {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+
+  .font-sizer {
+    width: 100%;
+  }
+
+  .text-align {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0.5em;
+    }
+  }
+}

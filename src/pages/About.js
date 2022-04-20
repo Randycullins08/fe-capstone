@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div className="about-page-container">
       <h1>Hello From About</h1>
     </div>
   );

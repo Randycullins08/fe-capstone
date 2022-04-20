@@ -24,6 +24,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
         <div className="card">
           <div className="card-header">
             Magic 8 Ball <hr />
@@ -38,6 +39,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
         <div className="card">
           <div className="card-header">
             Calculator <hr />
@@ -49,6 +51,19 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
+        <div className="card">
+          <div className="card-header">
+            Fun With State <hr />
+          </div>
+          <div className="card-body">
+            Widget to play around with different examples of using state.
+            <div className="overlay">
+              <Link to="/fun-with-state">Fun With State</Link>
+            </div>
+          </div>
+        </div>
+
         <div className="card">
           <div className="card-header">
             FizzBuzz <hr />
@@ -62,19 +77,7 @@ export default function Dashboard() {
             <div className="overlay">Hello</div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header">
-            FizzBuzz <hr />
-          </div>
-          <div className="card-body">
-            <img
-              alt="widget-img"
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80"
-            />
-            Widget to do FizzBuzz
-            <div className="overlay">Hello</div>
-          </div>
-        </div>
+
         <div className="card">
           <div className="card-header">
             FizzBuzz <hr />

@@ -8,6 +8,7 @@
 @import "./pages/fizzBuzz.scss";
 @import "./pages/magic8Ball.scss";
 @import "./pages/calculator.scss";
+@import "./pages/funWithState.scss";
 
 body {
   margin: 0;
@@ -23,6 +24,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 h3 {
   margin: 0;
 }
@@ -31,4 +36,13 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: "Lobster", cursive;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(53, 182, 224);
+  color: white;
+  border-radius: 20px;
+  margin: 0 2em;
 }

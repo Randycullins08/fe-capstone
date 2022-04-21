@@ -12,6 +12,14 @@ export default function SideNavbar() {
           Main Dashboard
         </NavLink>
 
+        <NavLink activeClassName="active" to="/swapi">
+          Swapi
+        </NavLink>
+
+        <NavLink activeClassName="active" to="/weather-api">
+          Weather Api
+        </NavLink>
+
         <NavLink activeClassName="active" to="/fizz-buzz">
           FizzBuzz
         </NavLink>

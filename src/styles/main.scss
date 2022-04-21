@@ -4,11 +4,13 @@
 @import "./topNavbar.scss";
 @import "./sideNavbar.scss";
 @import "./pages/dashboard.scss";
-@import "./pages/about.scss";
+@import "./pages/swapi.scss";
+@import "./pages/weatherApi.scss";
 @import "./pages/fizzBuzz.scss";
 @import "./pages/magic8Ball.scss";
 @import "./pages/calculator.scss";
 @import "./pages/funWithState.scss";
+@import "./pages/about.scss";
 
 body {
   margin: 0;
@@ -17,7 +19,7 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 h1 {

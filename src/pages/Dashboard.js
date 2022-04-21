@@ -10,6 +10,30 @@ export default function Dashboard() {
       <div className="card-container">
         <div className="card">
           <div className="card-header">
+            Swapi <hr />
+          </div>
+          <div className="card-body">
+            Program to get data from Swapi
+            <div className="overlay">
+              <Link to="/swapi">Swapi</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-header">
+            Weather API <hr />
+          </div>
+          <div className="card-body">
+            Get the weather here!
+            <div className="overlay">
+              <Link to="/weather-api">Weather Api</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-header">
             FizzBuzz <hr />
           </div>
           <div className="card-body">
@@ -61,34 +85,6 @@ export default function Dashboard() {
             <div className="overlay">
               <Link to="/fun-with-state">Fun With State</Link>
             </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-header">
-            FizzBuzz <hr />
-          </div>
-          <div className="card-body">
-            <img
-              alt="widget-img"
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80"
-            />
-            Widget to do FizzBuzz
-            <div className="overlay">Hello</div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-header">
-            FizzBuzz <hr />
-          </div>
-          <div className="card-body">
-            <img
-              alt="widget-img"
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80"
-            />
-            Widget to do FizzBuzz
-            <div className="overlay">Hello</div>
           </div>
         </div>
       </div>

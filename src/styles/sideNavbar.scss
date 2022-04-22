@@ -10,9 +10,21 @@
   color: white;
   height: 100vh;
 
+  .user-wrapper {
+    margin-top: 2em;
+    i {
+      font-size: 1.5em;
+    }
+
+    button {
+      background-color: white;
+      color: black;
+    }
+  }
+
   .app-title-wrapper {
     font-size: 1.5em;
-    margin: 3em 0em 1em;
+    margin: 1em 0em 1em;
     color: white;
     text-decoration: none;
     color: white;

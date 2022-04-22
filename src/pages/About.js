@@ -17,7 +17,7 @@ export default function About() {
             familiar with. Magic 8 Ball lets you get a prediction from the click
             of a button. The calculator widget is a calculator that you can use
             in this app. The fun with state widget has widgets within it that
-            show different ways you can manipulate state in React.
+            show different ways you can use state in React.
           </p>
         </div>
 

@@ -1,45 +1,66 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+// TODO: have search render indivdual info
+
+const urls = [
+  "https://www.swapi.tech/api/people",
+  "https://www.swapi.tech/api/planets",
+  "https://www.swapi.tech/api/starships",
+  "https://www.swapi.tech/api/species",
+];
 
 export default function Swapi() {
-  const [people, setPeople] = useState([]);
-  const [person, setPerson] = useState("");
+  const [url, setUrl] = useState([]);
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState([]);
 
-  useEffect(() => {
-    async function swapiData() {
-      await fetch("https://www.swapi.tech/api/people")
-        .then((res) => res.json())
-        .then((data) => setPeople(data.results))
-        .catch((err) => console.error("Get People Error: ", err));
+  function handleSelectCategory(e) {
+    const request = search ? url + "/?name=" + search : url;
 
-      fetch(`https:www.swapi.tech/api/people/1`)
-        .then((res) => res.json())
-        .then((data) => console.log(data.properties))
-        .catch((err) => console.error(err));
-    }
-
-    swapiData();
-  }, []);
+    fetch(request)
+      .then((res) => res.json())
+      .then((data) => {
+        setResults(data.result || data.results);
+      })
+      .catch((err) => console.error("Get Swapi Error: ", err));
+  }
 
   return (
     <div className="swapi-container">
       <div className="swapi-header">
         <h1>Hello from swapi</h1>
-        <form>
-          <select>
-            <option>Select Person To Find Out Their Home Planet</option>
-            {people.map((person) => (
-              <option key={person.uid}>{person.name}</option>
-            ))}
-          </select>
-          <select>
-            {people.map((person) => (
-              <option key={person.uid}>{person.url}</option>
-            ))}
-          </select>
-        </form>
+        <select onChange={(e) => setUrl(e.target.value)}>
+          <option>Select Option</option>
+          {urls.map((url) => {
+            return (
+              <option key={url} value={url}>
+                {url.split("/").at(-1)}
+              </option>
+            );
+          })}
+        </select>
+        {url && (
+          <>
+            <input
+              type="text"
+              placeholder="Enter a search parameter"
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <button onClick={handleSelectCategory}>Search</button>
+          </>
+        )}
 
-        <input type="text" onChange={(e) => setPerson(e.target.value)} />
-        {person}
+        {results.map((result) => (
+          <ul key={result.uid}>
+            <li>{result.name}</li>
+          </ul>
+        ))}
+
+        {console.log(results)}
+
+        {/* {results.map((result) => (
+          <div>{JSON.stringify(result.properties.name)}</div>
+        ))} */}
       </div>
     </div>
   );

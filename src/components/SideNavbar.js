@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
 
-export default function SideNavbar() {
+export default function SideNavbar(props) {
+  function logout() {
+    props.logout(false);
+  }
+
   return (
     <div className="side-navbar-container">
+      <div className="user-wrapper">
+        <i className="fas fa-user-astronaut"></i>
+        <button onClick={logout}>Logout</button>
+      </div>
+
       <div className="app-title-wrapper">
         <h3>My React Widgets</h3>
       </div>

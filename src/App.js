@@ -17,6 +17,15 @@ function App() {
 
   const handleLogin = (isLoggedIn) => {
     setIsLoggedIn(isLoggedIn);
+
+    if (isLoggedIn === false) {
+      fetch("https://devpipeline-mock-api.herokuapp.com/api/auth/logout", {
+        credentials: "include",
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.error("Logout Error: ", err));
+    }
   };
 
   const unauthenticatedRoutes = () => {
@@ -35,7 +44,7 @@ function App() {
   const authenticatedRoutes = () => {
     return (
       <>
-        <SideNavbar />
+        <SideNavbar logout={() => setIsLoggedIn(false)} />
         <Route exact path="/" component={Dashboard} />
         <Route path="/swapi" component={Swapi} />
         <Route path="/weather-api" component={WeatherApi} />
